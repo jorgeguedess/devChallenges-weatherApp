@@ -1,6 +1,6 @@
 // Icons
+import { useContext } from "react";
 import { TbNavigationFilled } from "../../styles/Icons";
-import { PanelProps } from "../Panel";
 
 import {
   Container,
@@ -13,8 +13,11 @@ import {
   Number,
   BarPercentage,
 } from "./styles";
+import { GlobalContext } from "../../context/WeatherContext";
 
-const PanelHightLights = ({ weather }: PanelProps) => {
+const PanelHightLights = () => {
+  const { weather } = useContext(GlobalContext);
+
   return (
     <Container>
       <Card>

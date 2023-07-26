@@ -20,13 +20,13 @@ interface MenuProps {
 
 const Menu = () => {
   const {
-    weather: { name, icon, temp, details },
+    weather: { name },
   }: MenuProps = useContext(GlobalContext);
 
   return (
     <Container>
       <MenuSearch />
-      <MenuWeather icon={icon} temp={temp} details={details} />
+      <MenuWeather />
       <MenuBottom name={name} />
     </Container>
   );

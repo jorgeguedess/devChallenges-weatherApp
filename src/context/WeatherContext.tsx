@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { ReactNode, createContext, useState } from "react";
 
 export const GlobalContext = createContext<any | null>(null);
 
@@ -41,11 +41,15 @@ export interface PropsWeatherObject {
   setUnitsWeather: any;
 }
 
-export const GlobalStorage: React.FC = ({ children }: any) => {
+interface MyComponentProps {
+  children: ReactNode;
+}
+
+export const GlobalStorage: React.FC<MyComponentProps> = ({ children }) => {
   const [query, setQuery] = useState<queryProps>({ lat: null, lon: null });
   const [units, setUnits] = useState<`${Units}`>("metric");
   const [weather, setWeather] = useState<any | null>(null);
-  
+
   const [unitsWeather, setUnitsWeather] = useState<string | null>(null);
 
   const weatherObject: PropsWeatherObject = {

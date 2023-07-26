@@ -8,6 +8,7 @@ import { GlobalContext } from "../../context/WeatherContext";
 import { useContext } from "react";
 
 export interface DailyProps {
+  [x: string]: any;
   title: string;
   temp_min: number;
   temp_max: number;
@@ -49,7 +50,7 @@ const Panel = () => {
           )}
       </Cards>
       <Title>Today's Hightlights</Title>
-      <PanelHightLights weather={weather} />
+      <PanelHightLights />
     </Container>
   );
 };

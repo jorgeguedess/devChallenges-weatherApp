@@ -30,6 +30,7 @@ const MenuSearch: React.FC = () => {
   const handleCloseMenu = () => {
     setActive(false);
   };
+
   const handleOpenMenu = () => {
     setActive(true);
   };

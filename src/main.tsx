@@ -6,10 +6,10 @@ import GlobalStyles from "./styles/GlobalStyles.ts";
 import { GlobalStorage } from "./context/WeatherContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <GlobalStorage>
-    <React.StrictMode>
+  <React.StrictMode>
+    <GlobalStorage>
       <GlobalStyles />
       <App />
-    </React.StrictMode>
-  </GlobalStorage>
+    </GlobalStorage>
+  </React.StrictMode>
 );

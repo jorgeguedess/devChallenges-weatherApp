@@ -1,10 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useContext, useState } from "react";
 import { Container, InputContainer, InputSearch, Button } from "./styles";
 
 import { BiSearchAlt2 } from "../../../styles/Icons";
 import { GlobalContext } from "../../../context/WeatherContext";
 
-const Input: React.FC = ({ handleCloseMenu }: any) => {
+interface InputProps {
+  handleCloseMenu: () => void;
+}
+
+const Input: React.FC<InputProps> = ({ handleCloseMenu }) => {
   const [search, setSearch] = useState<string>("");
 
   const { setQuery } = useContext(GlobalContext);
