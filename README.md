@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://jorgeguedess-windbnb.netlify.app/">
+    <a href="https://jorge-guedes-weatherapp.netlify.app//">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/fIc7VUyJFyZZlWEIG7FR">
+    <a href="https://devchallenges.io/solutions/4sGVXxFZXMbrXRl1nlR2">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD">
+    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
       Challenge
     </a>
   </h3>
@@ -34,14 +34,15 @@
 
 ## Overview
 
-![screenshot](./public/video-windbnb.gif)
+![screenshot](./public/desktop-preview.png)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [SASS](https://sass-lang.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled-Components](https://styled-components.com/)
 
 ## Features
 
@@ -57,7 +58,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/jorgeguedess/devChallenges-windbnb.git
+$ git clone https://github.com/jorgeguedess/devChallenges-weatherApp
 
 # Install dependencies
 $ npm install
